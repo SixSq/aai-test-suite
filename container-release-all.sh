@@ -2,5 +2,5 @@
 
 for release_script in `ls */container-release.sh`
 do
-  sh $release_script
+  ./$release_script
 done
