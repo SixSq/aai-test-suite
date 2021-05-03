@@ -21,6 +21,6 @@ ENV USERNAME "ocre-test"
 
 VOLUME "/opt/output"
 
-ENTRYPOINT ["./sixsq-nuvla.py"]
+ENTRYPOINT ["pytest"]
 
 CMD ["--username", "${USERNAME}", "--password", "${PASSWORD}"]
