@@ -2,5 +2,7 @@
 
 for release_script in `ls */container-release.sh`
 do
-  ./$release_script
+  pushd $(echo $release_script | awk -F'/' '{print $1}')
+  ./container-release.sh
+  popd
 done
