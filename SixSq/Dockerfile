@@ -17,4 +17,10 @@ RUN apt update && \
       libdbus-glib-1-dev && \
     rm -rf /var/lib/apt/lists/*
 
+ENV USERNAME "ocre-test"
+
+VOLUME "/opt/output"
+
 ENTRYPOINT ["./sixsq-nuvla.py"]
+
+CMD ["--username", "${USERNAME}", "--password", "${PASSWORD}"]
