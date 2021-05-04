@@ -31,4 +31,4 @@ docker run --rm -v $(pwd)/output:/opt/output \
 
 ## Results
 
-On success you'll have a bash exit code equal to 0 (1 otherwise). The test report can be found, as an HTML page, at `$(pwd)/output`. You can open it with any browser.
+On success you'll have a bash exit code equal to 0 (1 otherwise). The test reports can be found, both as HTML and JSON files, at `$(pwd)/output`. 
