@@ -41,9 +41,9 @@ def test_sixsq_nuvla_aai(page, username, _password):
     page.goto(nuvla_login_page + "/credentials")
 
     # logout
-    page.click("div[role=\"listbox\"] i")
+    page.click("div[role=\"listbox\"]")
     with page.expect_navigation():
-        page.click("div[role=\"option\"]:has-text(\"logout\")")
+        page.click("//div[normalize-space(.)='logout' and normalize-space(@role)='option']")
 
     assert page.url == nuvla_login_page
 

@@ -22,5 +22,3 @@ ENV USERNAME "ocre-test"
 VOLUME "/opt/output"
 
 ENTRYPOINT ["pytest"]
-
-CMD ["--username", "${USERNAME}", "--password", "${PASSWORD}"]
