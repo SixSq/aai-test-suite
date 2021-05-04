@@ -2,7 +2,7 @@
 
 VERSION=$1
 
-SKIP_CHANGELOG=$2
+SKIP_CHANGELOG="yes"
 
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
